@@ -1,0 +1,58 @@
+#terminal {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    font-family: monospace;
+    font-size: 1.4em;
+    background-color: #202020;
+    border-radius: 3px 3px 0 0;
+    color: white;
+}
+
+#terminal .error, #terminal .help {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto 5px auto;
+    border-radius: 0 0 4px 4px;
+    padding: 0 5px;
+    max-height: 1000px;
+    transition: max-height 500ms linear;
+    overflow: hidden;
+}
+#terminal .error:empty, #terminal .help:empty {
+    max-height: 0px;
+    margin: 0;
+}
+#terminal .error {
+    background-color: #180000;
+    color: #DD3333;
+}
+#terminal .help {
+    background-color: #001800;
+    color: #33DD33;
+}
+
+#terminal form {
+    display: block;
+    box-sizing: border-box;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+input#command {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 5px auto;
+    background-color: #262626;
+    border: none;
+    color: white;
+}
+input#command:focus {
+    outline: none;
+    background-color: #2D2D2D;
+}
